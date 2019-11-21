@@ -40,7 +40,7 @@ public class BalancedBracketsTest {
     @Test
     public void reversedBalancedBracketsBetweenString() {
 
-        assertTrue(test_Class.hasBalancedBrackets("]LaunchCode["));
+        assertFalse(test_Class.hasBalancedBrackets("]LaunchCode["));
         //System.out.println(test_Class.hasBalancedBrackets("]["));
 
     }
@@ -48,7 +48,7 @@ public class BalancedBracketsTest {
     @Test
     public void reversedBalancedBrackets() {
 
-        assertTrue(test_Class.hasBalancedBrackets("]["));
+        assertFalse(test_Class.hasBalancedBrackets("]["));
     }
 
     @Test
@@ -68,6 +68,10 @@ public class BalancedBracketsTest {
     @Test
     public void onlyRightOpenUnBalancedBracket(){
         assertFalse(test_Class.hasBalancedBrackets("]"));
+    }
+    @Test
+    public void testunBalancedBracketsWithString(){
+        assertFalse(test_Class.hasBalancedBrackets("[launchcode]code]["));
     }
 
 }

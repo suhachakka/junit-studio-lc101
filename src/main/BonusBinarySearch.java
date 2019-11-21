@@ -32,7 +32,7 @@ public class BonusBinarySearch {
 
     public static void main(String[] args){
         int[] arr = { 2, 3, 4, 10, 40 };
-        int n=40;
+        int n=10;
         int result = BonusBinarySearch.binarySearch(arr,n);
         //System.out.println(result);
         if(result == -1) {
