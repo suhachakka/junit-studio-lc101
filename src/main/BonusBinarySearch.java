@@ -1,14 +1,16 @@
 package main;
 
+import java.util.Arrays;
+
 public class BonusBinarySearch {
 
     /**
      * A binary search implementation for integer arrays.
-     *
+     * <p>
      * Info about binary search: https://www.geeksforgeeks.org/binary-search/
      *
      * @param sortedNumbers - must be sorted from least to greatest
-     * @param n - number to search for
+     * @param n             - number to search for
      * @return index of search item if it's found, -1 if not found
      */
     public static int binarySearch(int[] sortedNumbers, int n) {
@@ -27,4 +29,17 @@ public class BonusBinarySearch {
         return -1;
     }
 
-}
+
+    public static void main(String[] args){
+        int[] arr = { 2, 3, 4, 10, 40 };
+        int n=40;
+        int result = BonusBinarySearch.binarySearch(arr,n);
+        //System.out.println(result);
+        if(result == -1) {
+            System.out.println("Element not present");
+        } else{
+            System.out.println("Element found at index " +result);
+            }
+        }
+    }
+
