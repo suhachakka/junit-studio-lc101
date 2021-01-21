@@ -62,7 +62,7 @@ public class BalancedBracketsTest {
     }
     //expected false
     @Test
-    public void onlyleftOpenUnBalancedBracket(){
+    public void onlyLeftOpenUnBalancedBracket(){
         assertFalse(test_Class.hasBalancedBrackets("["));
     }
     @Test
@@ -70,8 +70,8 @@ public class BalancedBracketsTest {
         assertFalse(test_Class.hasBalancedBrackets("]"));
     }
     @Test
-    public void testunBalancedBracketsWithString(){
-        assertFalse(test_Class.hasBalancedBrackets("[launchcode]code]["));
+    public void testUnBalancedBracketsWithString(){
+        assertFalse(test_Class.hasBalancedBrackets("[launchcode[[code]["));
     }
 
 }

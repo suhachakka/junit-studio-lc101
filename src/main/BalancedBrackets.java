@@ -31,14 +31,13 @@ public class BalancedBrackets {
                 brackets--;
 
             }
-            if(brackets < 0){
+            if (brackets < 0) {
                 return false;
             }
 
         }
-            return brackets == 0;
-        }
-
+        return brackets == 0;
+    }
     public static void main(String[] args){
         String str = "[like,[lost]";
         String str1 = "][";
